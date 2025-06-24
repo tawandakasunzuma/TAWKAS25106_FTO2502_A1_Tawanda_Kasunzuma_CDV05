@@ -1,8 +1,16 @@
+/* ===============
+    Global Styles
+=============== */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+/* ===============
+    Body
+=============== */
 
 body {
     margin: 0 10vw;
@@ -10,11 +18,16 @@ body {
     font-family: 'Lato',sans-serif;
 }
 
+/* ===============
+    Navbar
+=============== */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 0;
+    border: 2px solid red;
 }
 
 .logo {
@@ -32,13 +45,19 @@ body {
 .nav-item a {
     text-decoration: none;
     color: rgb(32, 0, 32);
+    font-weight: bold;
 }
 
-.bottom-header {
-    margin-top: 2rem;
+/* ===============
+    Hero Section
+=============== */
+
+.hero-section {
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10vw;
+    border: 2px solid red;
 }
 
 .left-side {
@@ -59,6 +78,23 @@ body {
     font-weight: bold;
 }
 
+.greeting-name {
+    color: rgb(64, 0, 64);
+    animation: colorChange 6000ms ease alternate 300ms infinite;
+}
+
+@keyframes colorChange {
+    25% {
+        color: rgb(96, 0, 96);
+    }
+    50% {
+        color: rgb(64, 0, 64);
+    }
+    75% {
+        color: rgb(128, 0, 128);
+    }
+}
+
 .intro-about-me {
     color: rgba(32, 0, 32, 0.625);
     font-size: 1rem;
@@ -72,22 +108,17 @@ body {
     align-items: center;
     background-color: rgba(128, 0, 128, 0.1);
     border-radius: 2rem;
-    animation: pan 24000ms alternate 600ms infinite;
+    animation: pan 24000ms ease alternate 600ms infinite;
+    box-shadow: 0 0 8px rgba(128, 0, 128, 0.125);
 }
 
 @keyframes pan {
-    0% {
-        transform: translateX(0);
-    }
-    20% {
+    25% {
         transform: translateX(10px);
     }
-    80% {
+    75% {
         transform: translateX(-10px);
     } 
-    100% {
-        transform: translate(0);
-    }
 }
 
 .profile-picture {
@@ -112,8 +143,8 @@ body {
 
 .projects-btn {
     background-color: purple;
-    color: white;
     border: 2px solid purple;
+    color: white;
 }
 
 .projects-btn:hover,
@@ -128,31 +159,61 @@ body {
     border-color: rgba(128, 0, 128, 0.5);
 }
 
-.linkedIn-btn {
+.download-cv-btn {
     color: purple;
     background-color: white;
     border: 2px solid purple;
 }
 
-.linkedIn-btn:hover,
-.linkedIn-btn:focus {
+.download-cv-btn:hover,
+.download-cv-btn:focus {
     transform: translateY(-2px);
     color: rgb(64, 0, 64);
 }
 
-.linkedIn-btn:active {
-    color: rgb(32, 0, 32);
+.download-cv-btn:active {
     border-color: rgb(32, 0, 32);
+    color: rgb(32, 0, 32);
 }
 
-@media (max-width: 767px) {
-    body {
-        background-color: blue;
+main {
+    margin-top: 4rem;
+    border: 2px solid red;
+}
+
+/* ===============
+    Code animation section
+=============== */
+
+.code-animation-section {
+    background-color: rgba(128, 0, 128, 0.1);
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.code-animation {
+    width: 40px;
+    position: relative;
+    animation: codeAnimation 4800ms ease-in-out infinite alternate;
+}
+
+@keyframes codeAnimation {
+    0% {
+        left: 0%;
+        opacity: 0;
     }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    body {
-        background-color: red;
+    25% {
+        
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5) rotate(360deg);
+    }
+    75% {
+        
+    }
+    100% {
+        left: 95%;
+        opacity: 0;
     }
 }
