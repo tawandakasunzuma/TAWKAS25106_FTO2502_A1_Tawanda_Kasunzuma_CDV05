@@ -255,7 +255,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .personal-info-container,
@@ -393,8 +393,9 @@ main {
 }
 
 .icons-heading {
-    font-size: 1rem;
-    color: rgba(64, 0, 64, 0.875);
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: rgba(64, 0, 64, 0.75);
 }
 
 .icons-container {
