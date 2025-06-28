@@ -47,13 +47,39 @@ const techNameDisplay = document.querySelector(".tech-name-display");
 allWraps.forEach(wrap => {
     wrap.addEventListener("mouseover", () => {
         const icon = wrap.querySelector(".icon");
-        techNameDisplay.style.color = "rgba(16, 0, 16, 0.5)";
-        techNameDisplay.style.backgroundColor = "rgba(128, 0, 128, 0.025)";
+        techNameDisplay.style.color = "rgba(16, 0, 16, 0.75)";
+        techNameDisplay.style.border = "2px solid rgba(128, 0, 128, 0.125)";
+        techNameDisplay.style.opacity = "1";
         techNameDisplay.textContent = icon.alt;
+
     });
     wrap.addEventListener("mouseout", () => {
-        techNameDisplay.style.color = "rgba(128, 0, 128, 0.1)";
-        techNameDisplay.style.backgroundColor = "rgba(128, 0, 128, 0.1)";
-        techNameDisplay.textContent = "'";
+        techNameDisplay.style.color = "rgba(128, 0, 128, 0.25)";
+        techNameDisplay.style.border = "2px solid rgba(128, 0, 128, 0.25)";
+        techNameDisplay.style.opacity = "0.75";
+        
     });
 })
+
+const aboutCards = document.querySelectorAll(
+  ".personal-info-container, .fun-facts-container, .tech-journey-container"
+);
+
+const aboutObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        aboutCards.forEach((card, index) => {
+          setTimeout(() => {
+            card.classList.add("slide-in");
+          }, index * 600); // staggered effect
+        });
+        aboutObserver.disconnect();
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+
+// Watch one of the cards or a wrapper element (like about-container)
+aboutObserver.observe(document.querySelector(".about-container"));
