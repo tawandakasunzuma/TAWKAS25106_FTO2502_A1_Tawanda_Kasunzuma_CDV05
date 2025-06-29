@@ -205,18 +205,19 @@ body {
     color: purple;
     background-color: white;
     border: 2px solid purple;
+    text-decoration: none;
 }
 
 .download-cv-btn:hover,
 .download-cv-btn:focus {
     transform: translateY(-2px);
-    border-color: rgb(64, 0, 64);
-    color: rgb(64, 0, 64);
+    border-color: rgb(32, 0, 32);
+    color: rgb(32, 0, 32);
 }
 
 .download-cv-btn:active {
-    border-color: rgb(32, 0, 32);
-    color: rgb(32, 0, 32);
+    border-color: rgba(64, 0, 64, 0.5);
+    color: rgba(64, 0, 64, 0.5);
 }
 
 main {
@@ -512,9 +513,9 @@ hr {
 
 .project-image {
     width: auto;
-    height: 250px;
-    box-shadow: 0 4px 32px purple;
-    animation: imageGlow 12000ms ease infinite alternate;
+    height: 280px;
+    box-shadow: 0 4px 24px purple;
+    animation: imageGlow 4800ms ease infinite alternate;
     border-radius: 1rem;
 }
 
@@ -523,7 +524,7 @@ hr {
         box-shadow: 0 2px 16px rgba(128, 0, 128, 0.75);
     }
     50% {
-        box-shadow: 0 4px 32px purple;
+        box-shadow: 0 4px 24px purple;
     } 
     75% {
         box-shadow: 0 1px 12px rgba(128, 0, 128, 0.5)
@@ -637,10 +638,12 @@ hr {
     background-color: white;
     color: rgba(128, 0, 128, 0.875);
     border-color: white;
+    border-radius: 0 2rem 0 0;
 }
 
 .project-code:active {
     border-color: rgb(128, 0, 128);
+    border-radius: 0;
 }
 
 /* ===============
@@ -656,6 +659,10 @@ hr {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-paragraph {
+    opacity: 0.75;
 }
 
 .send-a-message-container,
@@ -681,7 +688,7 @@ hr {
 
 .input-field {
     padding: 0.75rem 1rem;
-    border: 1px solid rgba(64, 0, 64, 0.5);
+    border: 1px solid rgba(32, 0, 32, 0.5);
     width: 100%;
     color: rgb(64, 0, 64);
     outline-color: purple;
@@ -805,7 +812,7 @@ hr {
 
 .download-cv-contact:active {
     background-color: rgba(128, 0, 128, 0.5);
-    border-color: rgba(128, 0, 128, 0.5);
+    border-color: rgba(128, 0, 128, 0.25);
 }
 
 /* ===============

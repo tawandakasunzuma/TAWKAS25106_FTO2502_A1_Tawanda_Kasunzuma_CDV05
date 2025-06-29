@@ -120,3 +120,19 @@ icons.forEach(icon => {
     document.querySelector(".tech-percentage-description").style.opacity = "0.75";
   })
 })
+
+const form = document.querySelector('.form');
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  const data = new FormData(form);
+  const res = await fetch(form.action, {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  });
+  if (res.ok) {
+    form.innerHTML = '<p>Thanks! Your message has been sent.</p>';
+  } else {
+    form.insertAdjacentHTML('beforeend', '<p>Oops! There was an error.</p>');
+  }
+});

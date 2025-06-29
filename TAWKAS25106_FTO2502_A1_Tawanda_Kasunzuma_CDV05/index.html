@@ -39,7 +39,9 @@
             <a href="#projects">
               <button class="btn projects-btn">Projects</button>
             </a>
-            <button class="btn download-cv-btn">Download CV</button>
+            <a href="./assets/Tawanda_Kasunzuma_CV.pdf" download class="btn download-cv-btn">
+              Download CV
+            </a>
           </div>
         </div>
         <div class="right-side">
@@ -261,13 +263,17 @@
               <div class="line"></div>
             </div>
             <p class="contact-paragraph">Contact me through my phone number, email address or use the form below</p>
-            <form class="form" action="#">
+            <form 
+              class="form" 
+              action="https://formspree.io/f/mrbkjbry"
+              method="POST"
+            >
               <div class="name-and-email-contact">
-                <input class="input-field" type="text" placeholder="Name *" required>
-                <input class="input-field" type="email" placeholder="Email *" required>
+                <input class="input-field" type="text" name="name" placeholder="Name *" required>
+                <input class="input-field" type="email" name="email" placeholder="Email *" required>
               </div>
-              <input class="input-field" type="text" placeholder="Subject">
-              <textarea class="input-field message-box" name="#" id="#" placeholder="Message" required></textarea>
+              <input class="input-field" type="text" name="subject" placeholder="Subject">
+              <textarea class="input-field message-box" name="message" required></textarea>
               <button class="input-field submit-btn" type="submit">Send Message</button>
             </form>
           </div>
@@ -291,7 +297,9 @@
               </div>
             </div>
             <div class="cv-section">
-              <a href="#"><button class="download-cv-contact">Download CV</button></a>
+              <a href="./assets/Tawanda_Kasunzuma_CV.pdf" download class="btn download-cv-btn download-cv-contact ">
+                Download CV
+              </a>
             </div>
           </div>
         </div>
