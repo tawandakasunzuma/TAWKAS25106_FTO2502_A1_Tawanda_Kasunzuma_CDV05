@@ -1,3 +1,5 @@
+import { techStack } from "./tech-stack.js"
+
 // Typewriter
 
 const text = `I'm a passionate front-end developer who enjoys turning ideas into clean, creative websites and web apps. I started with JavaScript and have grown into building responsive interfaces with modern tools. I love learning new things, solving problems, and working with others to bring great ideas to life.`;
@@ -47,7 +49,8 @@ const techNameDisplay = document.querySelector(".tech-name-display");
 allWraps.forEach(wrap => {
     wrap.addEventListener("mouseover", () => {
         const icon = wrap.querySelector(".icon");
-        techNameDisplay.style.color = "rgba(16, 0, 16, 0.625)";
+        techNameDisplay.style.color = "rgba(16, 0, 16, 0.75)";
+        techNameDisplay.style.backgroundColor = "rgba(16, 0, 16, 0.05)";
         techNameDisplay.style.opacity = "1";
         techNameDisplay.textContent = icon.alt;
 
@@ -81,3 +84,39 @@ const aboutObserver = new IntersectionObserver(
 
 // Watch one of the cards or a wrapper element (like about-container)
 aboutObserver.observe(document.querySelector(".about-container"));
+
+
+// Tech
+
+const icons = document.querySelectorAll(".icon");
+const techDescription = document.getElementById("tech-description");
+const techPercentage = document.querySelector(".tech-percentage");
+
+icons.forEach(icon => {
+  icon.addEventListener("mouseover", () => {
+    for (let i = 0; i < techStack.length; i++) {
+      // Update description
+      if (techStack[i].name === icon.alt) {
+        techDescription.textContent = techStack[i].description;
+        document.querySelector(".tech-percentage-description").style.opacity = "1";
+      
+      // Update percentage
+      techPercentage.textContent = `${techStack[i].level}%`;
+      // Update color of percentage
+      if (techStack[i].level === 25) {
+        techPercentage.style.backgroundColor = "rgb(252, 165, 165)";
+      } else if (techStack[i].level === 50) {
+        techPercentage.style.backgroundColor = "rgb(252, 211, 77)";
+      } else if (techStack[i].level === 75) {
+        techPercentage.style.backgroundColor = "rgb(110, 231, 183)";
+      } else {
+        techPercentage.style.backgroundColor = "rgb(74, 222, 128)";
+      }
+      break;
+      }
+    }
+  })
+  icon.addEventListener("mouseout", () => {
+    document.querySelector(".tech-percentage-description").style.opacity = "0.75";
+  })
+})

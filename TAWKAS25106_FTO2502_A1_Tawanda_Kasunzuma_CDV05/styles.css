@@ -319,12 +319,55 @@ main {
   animation: slideInRight 2400ms forwards ease;
 }
 
+.fun-fact-description {
+    margin-top: 1rem;
+    opacity: 0;
+    animation: fadeIn 600ms ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; transform: translateY(10px)
+  }
+  to {
+    opacity: 1; transform: translateY(0)
+  }
+}
+
+.fun-facts-icon {
+    margin-right: 0.25rem;
+    animation: iconSpin 800ms linear 6;
+}
+
+.fun-facts-list p:nth-child(1) {
+    animation-delay: 600ms
+}
+
+.fun-facts-list p:nth-child(2) {
+    animation-delay: 900ms
+}
+
+.fun-facts-list p:nth-child(3) {
+    animation-delay: 1200ms
+}
+
+@keyframes iconSpin {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
 
 /* ===============
     Tech Stack - Section
 =============== */
 
 .tech-section {
+    background-color: rgba(128, 0, 128, 0.05);
+    margin: 0 10vw;
+    padding: 4rem;
     margin-top: 8rem;
 }
 
@@ -340,7 +383,6 @@ main {
 
 .icons-container {
   display: flex;
-  margin: 0 10vw;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
@@ -357,7 +399,7 @@ main {
 }
 
 .icon {
-  width: 60px;
+  width: 50px;
   height: auto;
 }
 
@@ -390,7 +432,7 @@ main {
     text-align: center;
     font-size: 1.25rem;
     background-color: transparent;
-    color: rgba(128, 0, 128, 0.25);
+    color: rgba(128, 0, 128, 0.75);
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     font-weight: normal;
@@ -400,7 +442,6 @@ main {
     align-items: center;
     margin: 0 auto;
     margin-top: 4rem;
-    border-radius: 2rem;
     border: 2px solid transparent;
     opacity: 0.5;
     box-shadow: 0 0 4px rgba(128, 0, 128, 0.125);
@@ -410,6 +451,34 @@ main {
 
 .tech-name-display-container {
     text-align: center;
+}
+
+.tech-percentage {
+    background-color: rgba(128, 0, 128, 0.25);
+    color: white;
+    padding: 0.5rem 0;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    min-width: 10%;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    animation: bounce 1800ms infinite;
+}
+
+.tech-percentage-description {
+    margin-top: 4rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-weight: normal;
+    min-height: 2.25rem;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    opacity: 0.5;
 }
 
 /* ===============
@@ -422,10 +491,17 @@ main {
 }
 
 .all-projects-container {
-    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
+}
+
+.first-project {
+    margin-top: 4rem;
+}
+
+hr {
+    margin: 2rem 0;
 }
 
 .project-image-container {
@@ -437,6 +513,21 @@ main {
 .project-image {
     width: auto;
     height: 250px;
+    box-shadow: 0 4px 32px purple;
+    animation: imageGlow 12000ms ease infinite alternate;
+    border-radius: 1rem;
+}
+
+@keyframes imageGlow {
+    25% {
+        box-shadow: 0 2px 16px rgba(128, 0, 128, 0.75);
+    }
+    50% {
+        box-shadow: 0 4px 32px purple;
+    } 
+    75% {
+        box-shadow: 0 1px 12px rgba(128, 0, 128, 0.5)
+    }
 }
 
 .project-container {
@@ -584,13 +675,13 @@ main {
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
-    background-color: rgba(128, 0, 128, 0.0625);
+    background-color: rgba(128, 0, 128, 0.05);
     border-radius: 1rem;
 }
 
 .input-field {
-    padding: 0.5rem 1rem;
-    border: 1px solid rgba(32, 0, 32, 0.5);
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(64, 0, 64, 0.5);
     width: 100%;
     color: rgb(64, 0, 64);
     outline-color: purple;
@@ -615,7 +706,6 @@ main {
     background-color: rgb(128, 0, 128);
     color: white;
     font-weight: bold;
-    padding: 0.75rem 1rem;
     cursor: pointer;
     transition: all 600ms ease;
 }
@@ -688,7 +778,7 @@ main {
         animation-timing-function: ease-in-out;
     }
     30% {
-        transform: translateY(-16px);
+        transform: translateY(-8px);
         animation-timing-function: ease-in;
     }
     50% {
@@ -696,11 +786,11 @@ main {
         animation-timing-function: ease-out;
     }
     70% {
-        transform: translateY(-8px);
+        transform: translateY(-4px);
         animation-timing-function: ease-in;
     }
     95% {
-        transform: translateY(1px);
+        transform: translateY(0);
         animation-timing-function: ease-out;
     }
 }
@@ -716,4 +806,67 @@ main {
 .download-cv-contact:active {
     background-color: rgba(128, 0, 128, 0.5);
     border-color: rgba(128, 0, 128, 0.5);
+}
+
+/* ===============
+    Footer - Section
+=============== */
+
+.footer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+    text-align: center;
+    background-color: rgba(128, 0, 128, 0.05);
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(16, 0, 16, 0.875);
+}
+
+.footer-social-media {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-icon {
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+    transform: translateY(-2px);
+    opacity: 0.75;
+}
+
+.footer-icon:active {
+    opacity: 0.5;
+}
+
+.footer-bottom {
+    font-size: 1rem;
+    color: rgba(16, 0, 16, 0.875);
+}
+
+.footer-bottom strong {
+    color: rgba(32, 0, 32, 0.875);
 }

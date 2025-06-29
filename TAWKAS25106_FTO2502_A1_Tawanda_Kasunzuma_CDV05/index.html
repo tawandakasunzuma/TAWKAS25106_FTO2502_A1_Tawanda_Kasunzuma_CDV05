@@ -73,29 +73,30 @@
           </div>
           <div class="fun-facts-container">
             <h3 class="about-container-heading">Fun facts</h3>
-            <ul class="fun-facts-list">
-              <li>
-                When I'm not coding, I’m solving
-                <strong>Rubik’s cubes</strong>—yep, I can actually solve them!
-              </li>
-              <li>
-                Big music fan! I love making <strong>music</strong> and
-                <strong>DJing</strong> in my free time.
-              </li>
-              <li>
-                Surprise! I have a Diploma in <strong>Accounting</strong>.
-              </li>
-            </ul>
+            <div class="fun-facts-list">
+              <p class="fun-fact-description">
+                <img class="fun-facts-icon" src="./images/cube-icon.svg" alt="Cube icon" />
+                I solve <strong>Rubik's cubes</strong> for fun.
+              </p>
+              <p class="fun-fact-description">
+                <img class="fun-facts-icon" src="./images/headphones-icon.svg" alt="Headphone icon">
+                Huge music fan! I create <strong>hip-hop music</strong> and <strong>DJ</strong>.
+              </p>
+              <p class="fun-fact-description">
+                <img class="fun-facts-icon" src="./images/finance-icon.svg" alt="Finance chart icon">
+                I hold a Diploma in <strong>Accounting</strong>.
+              </p>
+            </div>
           </div>
           <div class="tech-journey-container">
             <h3 class="about-container-heading">Tech Journey</h3>
             <div class="tech-history">
-              <p class="tech-duration">Feb. 2025 - Jul. 2025</p>
-              <h4 class="tech-institution">CodeSpace Academy</h4>
-              <p class="tech-qualification">
-                Software Development (NQF Level 5)
-              </p>
-              <p class="tech-role"><em>Full Time Student</em></p>
+              <h4 class="tech-history-heading">Institution:</h4>
+              <p class="tech-history-description">CodeSpace (CPT)</p>
+              <h4 class="tech-history-heading">Position / Role:</h4>
+              <p class="tech-history-description">Full Time Student</p>
+              <h4 class="tech-history-heading">Duration:</h4>
+              <p class="tech-history-description"">February 2025 - August 2025</p>
             </div>
           </div>
         </div>
@@ -171,27 +172,17 @@
             </div>
           </div>
           <div class="tech-name-display-container">
-            <p class="tech-name-display">.</p>
+            <p class="tech-name-display">Hover</p>
+            <p class="tech-percentage">0%</p>
+            <p id="tech-description" class="tech-percentage-description">
+              Hover over tool to see description.
+            </p>
           </div>
         </div>
       </section>
-      <section class="code-animation-section middle-animation">
-        <img
-          class="code-animation"
-          src="./images/code-animation-icon.svg"
-          alt="Code animation icon"
-        />
-      </section>
       <section class="projects-section">
         <h2 class="section-heading" id="projects">Projects</h2>
-        <div class="all-projects-container">
-          <div class="project-image-container">
-            <img
-              src="./images/searcha-gif-image.png"
-              alt="Project image"
-              class="project-image"
-            />
-          </div>
+        <div class="all-projects-container first-project">
           <div class="project-container">
             <h3 class="project-name">Searcha Gif</h3>
             <p class="project-description-paragraph">
@@ -216,7 +207,15 @@
               </a>
             </div>
           </div>
+          <div class="project-image-container">
+            <img
+              src="./images/searcha-gif-image.png"
+              alt="Project image"
+              class="project-image"
+            />
+          </div>
         </div>
+        <div><hr></div>
         <div class="all-projects-container">
           <div class="project-container">
             <h3 class="project-name">Kanban Task Management App</h3>
@@ -297,6 +296,24 @@
           </div>
         </div>
     </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <p class="footer-name">Tawanda Kasunzuma</p>
+        <div class="footer-social-media">
+          <a href="https://github.com/tawandakasunzuma">
+            <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="purple" viewBox="0 0 16 16" aria-label="GitHub icon">
+              <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49C4 13.91 3.48 12.78 3.34 12.31c-.09-.23-.48-.93-.82-1.12-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82A7.7 7.7 0 018 4.69c.68 0 1.37.09 2.01.26 1.52-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/tawanda-kasunzuma/">
+            <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="purple" viewBox="0 0 16 16" aria-label="LinkedIn icon">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708C16 15.487 15.474 16 14.825 16H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.21c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.358.539-1.358 1.248 0 .694.52 1.248 1.327 1.248h.015zm4.908 8.21V9.359c0-.215.016-.43.08-.584.176-.43.577-.875 1.25-.875.881 0 1.234.66 1.234 1.628v3.866h2.401V9.27c0-2.22-1.183-3.252-2.764-3.252-1.274 0-1.845.704-2.165 1.2v.028h-.015a5.55 5.55 0 01.015-.028V6.169h-2.4c.03.692 0 7.225 0 7.225h2.4z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <small class="footer-bottom">&copy; 2025 <strong>Tawanda Kasunzuma</strong>. All rights reserved.</small>
+    </footer>
     <script src="./scripts.js" type="module"></script>
   </body>
 </html>
