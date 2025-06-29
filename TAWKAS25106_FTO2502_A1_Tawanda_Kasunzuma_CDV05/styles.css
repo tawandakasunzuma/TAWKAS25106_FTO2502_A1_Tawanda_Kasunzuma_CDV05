@@ -27,7 +27,6 @@ body {
     align-items: center;
     padding: 0.5rem 10vw;
     box-shadow: 0 2px 8px rgba(128, 0, 128, 0.075);
-    border: 2px solid red;
 }
 
 .logo {
@@ -94,7 +93,6 @@ body {
     gap: 10vw;
     margin: 0 10vw;
     margin-top: 4rem;
-    border: 2px solid red;
 }
 
 .left-side {
@@ -231,7 +229,10 @@ main {
 
 .code-animation-section {
     padding: 0.5rem 5vw;
-    border: 2px solid red;
+}
+
+.middle-animation {
+    margin-top: 4rem;
 }
 
 .code-animation {
@@ -261,7 +262,6 @@ main {
 =============== */
 
 .about-section {
-    border: 2px solid red;
     margin: 0 10vw;
     margin-top: 4rem;
 }
@@ -269,11 +269,9 @@ main {
 .section-heading {
     font-size: 2rem;
     text-align: center;
-    border: 2px solid blue;
 }
 
 .about-container {
-    border: 2px solid blue;
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -326,18 +324,15 @@ main {
     Tech Stack - Section
 =============== */
 
-.tech-stack-section {
-    border: 2px solid red;
-    margin-top: 4rem;
+.tech-section {
+    margin-top: 8rem;
 }
 
 .tech-stack-section {
-    border: 2px solid blue;
     margin-top: 4rem;
 }
 
 .tech-stacks {
-    border: 2px solid greenyellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -406,8 +401,9 @@ main {
     margin: 0 auto;
     margin-top: 4rem;
     border-radius: 2rem;
-    border: 2px solid rgba(128, 0, 128, 0.25);
-    box-shadow: 0 0 4px rgba(128, 0, 128, 0.0625);
+    border: 2px solid transparent;
+    opacity: 0.5;
+    box-shadow: 0 0 4px rgba(128, 0, 128, 0.125);
     max-width: 20vw;
     transition: all 300ms ease;
 }
@@ -421,13 +417,11 @@ main {
 =============== */
 
 .projects-section {
-    border: 2px solid red;
     margin: 0 10vw;
     margin-top: 4rem;
 }
 
 .all-projects-container {
-    border: 2px solid blue;
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -442,7 +436,7 @@ main {
 
 .project-image {
     width: auto;
-    height: 75%;
+    height: 300px;
 }
 
 .project-container {
@@ -451,7 +445,6 @@ main {
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
-    box-shadow: -2px 2px 4px rgba(32, 0, 32, 0.1);;
 }
 
 .project-name {
@@ -462,9 +455,12 @@ main {
 }
 
 .project-description-paragraph {
-    color: rgba(32, 0, 32, 0.625);
+    color: white;
     font-size: 1rem;
     margin-left: 1rem;
+    background-color: purple;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
 }
 
 .project-description-tools-used {
@@ -508,6 +504,12 @@ main {
 .project-link-container {
     display: flex;
     cursor: pointer;
+    border-radius: 0 2rem 2rem 0;
+    transition: all 600ms ease;
+}
+
+.project-link-container:hover {
+    transform: translateY(-2px);
 }
 
 .project-icon,
@@ -518,7 +520,8 @@ main {
 }
 
 .project-icon {
-    border: 3px solid rgba(128, 0, 128, 0.875);;
+    border: 3px solid rgba(128, 0, 128, 0.875);
+    border-right: transparent;
 }
 
 .project-code {
@@ -529,4 +532,25 @@ main {
     color: white;
     justify-content: center;
     align-items: center;
+    transition: all 600ms ease;
+}
+
+.project-code:hover,
+.project-code:active {
+    background-color: rgba(128, 0, 128);
+    border-color: rgba(128, 0, 128);
+}
+
+.project-code:active {
+    background-color: rgba(128, 0, 128,0.75);
+    border-color: rgba(128, 0, 128, 0.75);
+}
+
+/* ===============
+    Contact - Section
+=============== */
+
+.contact-section {
+    border: 2px solid red;
+    margin-top: 4rem;
 }
