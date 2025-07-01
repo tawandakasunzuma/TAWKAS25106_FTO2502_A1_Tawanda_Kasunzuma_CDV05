@@ -29,6 +29,20 @@ entries.forEach(entry => {
 
 document.querySelectorAll('.icon-wrap').forEach(el => observer.observe(el));
 
+const projectCards = document.querySelectorAll(".reveal-on-scroll");
+
+const projectObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("reveal");
+      projectObserver.unobserve(entry.target); // optional: reveal only once
+    }
+  });
+}, { threshold: 0.25 });
+
+projectCards.forEach(card => projectObserver.observe(card));
+
+
 // Magnetic hover
 document.querySelectorAll('.icon-wrap').forEach(icon => {
 icon.addEventListener('mousemove', e => {
@@ -56,8 +70,8 @@ allWraps.forEach(wrap => {
 
     });
     wrap.addEventListener("mouseout", () => {
-        techNameDisplay.style.color = "rgba(128, 0, 128, 0.75)";
-        techNameDisplay.style.opacity = "0.5";
+        techNameDisplay.style.color = "rgba(16, 0, 16, 0.75)";
+        techNameDisplay.style.opacity = "0.75";
         
     });
 })
