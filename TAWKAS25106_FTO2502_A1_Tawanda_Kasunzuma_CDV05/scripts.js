@@ -122,7 +122,7 @@ icons.forEach(icon => {
       } else if (techStack[i].level === 50) {
         techPercentage.style.backgroundColor = "rgb(252, 211, 77)";
       } else if (techStack[i].level === 75) {
-        techPercentage.style.backgroundColor = "rgb(110, 231, 183)";
+        techPercentage.style.backgroundColor = "rgb(113, 226, 181)";
       } else {
         techPercentage.style.backgroundColor = "rgb(74, 222, 128)";
       }

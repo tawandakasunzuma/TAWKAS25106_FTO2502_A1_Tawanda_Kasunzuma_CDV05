@@ -3,6 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tawanda Kasunzuma is a frontend software developer specializing in React, passionate about creative problem-solving and building responsive web and mobile apps."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./images/favicons/favicon.svg"
+    />
+    <link rel="shortcut icon" href="./images/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./images/favicons/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,7 +32,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <title>HTML CSS JavaScript</title>
+    <title>Tawanda Kasunzuma | Frontend Developer Portfolio</title>
   </head>
   <body>
     <header>
@@ -18,7 +40,7 @@
         <img
           class="logo"
           src="./images/logo.png"
-          alt="Tawanda Kasunzuma logo"
+          alt="Tawanda Kasunzuma personal logo"
         />
         <ul class="nav-item-container">
           <li class="nav-item"><a href="#about">About</a></li>
@@ -27,6 +49,8 @@
           <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+    </header>
+    <main>
       <section class="hero-section">
         <div class="left-side">
           <p class="job-title">Software Developer</p>
@@ -36,10 +60,12 @@
           </p>
           <p class="intro-about-me" id="typewriter"></p>
           <div class="button-container">
-            <a href="#projects">
-              <button class="btn projects-btn">Projects</button>
-            </a>
-            <a href="./assets/Tawanda_Kasunzuma_CV.pdf" download class="btn download-cv-btn">
+            <a href="#projects" class="btn projects-btn">Projects</a>
+            <a
+              href="./assets/Tawanda_Kasunzuma_CV.pdf"
+              download
+              class="btn download-cv-btn"
+            >
               Download CV
             </a>
           </div>
@@ -49,18 +75,17 @@
             class="profile-picture"
             src="./images/profile-picture.jpg"
             alt="Tawanda smiling in portrait photo"
+            loading="lazy"
           />
         </div>
       </section>
-    </header>
-    <main>
-      <section class="code-animation-section">
+      <div class="code-animation-section">
         <img
           class="code-animation"
           src="./images/code-animation-icon.svg"
           alt="Code animation icon"
         />
-      </section>
+      </div>
       <section class="about-section">
         <h2 class="section-heading" id="about">About</h2>
         <div class="about-container">
@@ -77,15 +102,28 @@
             <h3 class="about-container-heading">Fun facts</h3>
             <div class="fun-facts-list">
               <p class="fun-fact-description">
-                <img class="fun-facts-icon" src="./images/cube-icon.svg" alt="Cube icon" />
+                <img
+                  class="fun-facts-icon"
+                  src="./images/cube-icon.svg"
+                  alt="Cube icon"
+                />
                 I solve <strong>Rubik's cubes</strong> for fun.
               </p>
               <p class="fun-fact-description">
-                <img class="fun-facts-icon" src="./images/headphones-icon.svg" alt="Headphone icon">
-                Huge music fan! I create <strong>hip-hop music</strong> and <strong>DJ</strong>.
+                <img
+                  class="fun-facts-icon"
+                  src="./images/headphones-icon.svg"
+                  alt="Headphone icon"
+                />
+                Huge music fan! I create <strong>hip-hop music</strong> and
+                <strong>DJ</strong>.
               </p>
               <p class="fun-fact-description">
-                <img class="fun-facts-icon" src="./images/finance-icon.svg" alt="Finance chart icon">
+                <img
+                  class="fun-facts-icon"
+                  src="./images/finance-icon.svg"
+                  alt="Finance chart icon"
+                />
                 I hold a Diploma in <strong>Accounting</strong>.
               </p>
             </div>
@@ -98,7 +136,9 @@
               <h4 class="tech-history-heading">Position / Role:</h4>
               <p class="tech-history-description">Full Time Student</p>
               <h4 class="tech-history-heading">Duration:</h4>
-              <p class="tech-history-description"">February 2025 - August 2025</p>
+              <p class="tech-history-description">
+                February 2025 - August 2025
+              </p>
             </div>
           </div>
         </div>
@@ -188,7 +228,8 @@
           <div class="project-container">
             <h3 class="project-name">Searcha Gif</h3>
             <p class="project-description-paragraph">
-              A sleek and responsive GIF search app with click-to-load more results, dark mode, and one-click downloads for easy sharing.
+              A sleek and responsive GIF search app with click-to-load more
+              results, dark mode, and one-click downloads for easy sharing.
             </p>
             <div class="project-description-tools-used">
               <h4 class="project-sub-heading">Tools Used</h4>
@@ -199,12 +240,30 @@
               </ul>
             </div>
             <div class="project-links">
-              <a href="https://github.com/tawandakasunzuma/giphy-search-app" target="_blank" rel="noopener noreferrer" class="project-link-container">
-                <img class="project-icon" src="./images/code-icon.svg" alt="Code icon" />
+              <a
+                href="https://github.com/tawandakasunzuma/giphy-search-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-container"
+              >
+                <img
+                  class="project-icon"
+                  src="./images/code-icon.svg"
+                  alt="Code icon"
+                />
                 <p class="project-code">Code</p>
               </a>
-              <a href="https://searchagif.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link-container">
-                <img class="project-icon" src="./images/preview-icon.svg" alt="Preview icon" />
+              <a
+                href="https://searchagif.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-container"
+              >
+                <img
+                  class="project-icon"
+                  src="./images/preview-icon.svg"
+                  alt="Preview icon"
+                />
                 <p class="project-code">Live Demo</p>
               </a>
             </div>
@@ -212,17 +271,20 @@
           <div class="project-image-container reveal-on-scroll">
             <img
               src="./images/searcha-gif-image.png"
-              alt="Project image"
+              alt="Screenshot of Searcha Gif project interface"
               class="project-image"
+              loading="lazy"
             />
           </div>
         </div>
-        <div><hr></div>
+        <hr />
         <div class="all-projects-container">
           <div class="project-container">
             <h3 class="project-name">Kanban Task Management App</h3>
             <p class="project-description-paragraph">
-              A modern Kanban task manager built with HTML, CSS, and JavaScript, offering dynamic task handling, responsiveness, and theme toggling.
+              A modern Kanban task manager built with HTML, CSS, and JavaScript,
+              offering dynamic task handling, responsiveness, and theme
+              toggling.
             </p>
             <div class="project-description-tools-used">
               <h4 class="project-sub-heading">Tools Used</h4>
@@ -234,12 +296,30 @@
               </ul>
             </div>
             <div class="project-links">
-              <a href="https://github.com/tawandakasunzuma/TAWKAS25106_FTO2502_GroupA_Tawanda-Kasunzuma_JSLPP" target="_blank" rel="noopener noreferrer" class="project-link-container">
-                <img class="project-icon" src="./images/code-icon.svg" alt="Code icon" />
+              <a
+                href="https://github.com/tawandakasunzuma/TAWKAS25106_FTO2502_GroupA_Tawanda-Kasunzuma_JSLPP"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-container"
+              >
+                <img
+                  class="project-icon"
+                  src="./images/code-icon.svg"
+                  alt="Code icon"
+                />
                 <p class="project-code">Code</p>
               </a>
-              <a href="https://tawanda-kanban-task-manager.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link-container">
-                <img class="project-icon" src="./images/preview-icon.svg" alt="Preview icon" />
+              <a
+                href="https://tawanda-kanban-task-manager.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-container"
+              >
+                <img
+                  class="project-icon"
+                  src="./images/preview-icon.svg"
+                  alt="Preview icon"
+                />
                 <p class="project-code">Live Demo</p>
               </a>
             </div>
@@ -247,11 +327,11 @@
           <div class="project-image-container reveal-on-scroll">
             <img
               src="./images/kanban-app-image.png"
-              alt="Project image"
+              alt="Screenshot of Kanban App project interface"
               class="project-image"
+              loading="lazy"
             />
           </div>
-        </div>
         </div>
       </section>
       <section class="contact-section">
@@ -262,19 +342,50 @@
               <h3 class="contact-heading">Send a message</h3>
               <div class="line"></div>
             </div>
-            <p class="contact-paragraph">Contact me through my phone number, email address or use the form below</p>
-            <form 
-              class="form" 
+            <p class="contact-paragraph">
+              Contact me through my phone number, email address or use the form
+              below
+            </p>
+            <form
+              class="form"
               action="https://formspree.io/f/mrbkjbry"
               method="POST"
             >
               <div class="name-and-email-contact">
-                <input class="input-field" type="text" name="name" placeholder="Name *" required>
-                <input class="input-field" type="email" name="email" placeholder="Email *" required>
+                <input
+                  class="input-field"
+                  type="text"
+                  aria-label="Name"
+                  name="name"
+                  placeholder="Name *"
+                  required
+                />
+                <input
+                  class="input-field"
+                  type="email"
+                  aria-label="Email"
+                  name="email"
+                  placeholder="Email *"
+                  required
+                />
               </div>
-              <input class="input-field" type="text" name="subject" placeholder="Subject">
-              <textarea class="input-field message-box" name="message" required></textarea>
-              <button class="input-field submit-btn" type="submit">Send Message</button>
+              <input
+                class="input-field"
+                type="text"
+                aria-label="Subject"
+                name="subject"
+                placeholder="Subject"
+              />
+              <textarea
+                class="input-field message-box"
+                name="message"
+                lang="en"
+                aria-label="Message"
+                required
+              ></textarea>
+              <button class="input-field submit-btn" type="submit">
+                Send Message
+              </button>
             </form>
           </div>
           <div class="get-in-touch-container">
@@ -284,43 +395,89 @@
             </div>
             <div class="get-in-touch-section">
               <div class="contact-div">
-                <img class="contact-icon" src="./images/call-icon.svg" alt="Call icon">
+                <img
+                  class="contact-icon"
+                  src="./images/call-icon.svg"
+                  alt="Call icon"
+                />
                 <span class="contact-text">+27 63 891 8382</span>
               </div>
               <div class="contact-div">
-                <img class="contact-icon" src="./images/address-icon.svg" alt="Address icon">
+                <img
+                  class="contact-icon"
+                  src="./images/address-icon.svg"
+                  alt="Address icon"
+                />
                 <span class="contact-text">Durban, South Africa</span>
               </div>
               <div class="contact-div">
-                <img class="contact-icon" src="./images/email-icon.svg" alt="Email icon">
+                <img
+                  class="contact-icon"
+                  src="./images/email-icon.svg"
+                  alt="Email icon"
+                />
                 <span class="contact-text">tskasunzuma@gmail.com</span>
               </div>
             </div>
             <div class="cv-section">
-              <a href="./assets/Tawanda_Kasunzuma_CV.pdf" download class="btn download-cv-btn download-cv-contact ">
+              <a
+                href="./assets/Tawanda_Kasunzuma_CV.pdf"
+                download
+                class="btn download-cv-btn download-cv-contact"
+              >
                 Download CV
               </a>
             </div>
           </div>
         </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer-top">
         <p class="footer-name">Tawanda Kasunzuma</p>
         <div class="footer-social-media">
-          <a href="https://github.com/tawandakasunzuma">
-            <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="purple" viewBox="0 0 16 16" aria-label="GitHub icon">
-              <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49C4 13.91 3.48 12.78 3.34 12.31c-.09-.23-.48-.93-.82-1.12-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82A7.7 7.7 0 018 4.69c.68 0 1.37.09 2.01.26 1.52-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          <a
+            aria-label="GitHub Profile"
+            href="https://github.com/tawandakasunzuma"
+          >
+            <svg
+              class="footer-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="purple"
+              viewBox="0 0 16 16"
+              aria-label="GitHub icon"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49C4 13.91 3.48 12.78 3.34 12.31c-.09-.23-.48-.93-.82-1.12-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82A7.7 7.7 0 018 4.69c.68 0 1.37.09 2.01.26 1.52-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"
+              />
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/tawanda-kasunzuma/">
-            <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="purple" viewBox="0 0 16 16" aria-label="LinkedIn icon">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708C16 15.487 15.474 16 14.825 16H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.21c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.358.539-1.358 1.248 0 .694.52 1.248 1.327 1.248h.015zm4.908 8.21V9.359c0-.215.016-.43.08-.584.176-.43.577-.875 1.25-.875.881 0 1.234.66 1.234 1.628v3.866h2.401V9.27c0-2.22-1.183-3.252-2.764-3.252-1.274 0-1.845.704-2.165 1.2v.028h-.015a5.55 5.55 0 01.015-.028V6.169h-2.4c.03.692 0 7.225 0 7.225h2.4z"/>
+          <a
+            aria-label="LinkedIn Profile"
+            href="https://www.linkedin.com/in/tawanda-kasunzuma/"
+          >
+            <svg
+              class="footer-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="purple"
+              viewBox="0 0 16 16"
+              aria-label="LinkedIn icon"
+            >
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708C16 15.487 15.474 16 14.825 16H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.21c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.358.539-1.358 1.248 0 .694.52 1.248 1.327 1.248h.015zm4.908 8.21V9.359c0-.215.016-.43.08-.584.176-.43.577-.875 1.25-.875.881 0 1.234.66 1.234 1.628v3.866h2.401V9.27c0-2.22-1.183-3.252-2.764-3.252-1.274 0-1.845.704-2.165 1.2v.028h-.015a5.55 5.55 0 01.015-.028V6.169h-2.4c.03.692 0 7.225 0 7.225h2.4z"
+              />
             </svg>
           </a>
         </div>
       </div>
-      <small class="footer-bottom">&copy; 2025 <strong>Tawanda Kasunzuma</strong>. All rights reserved.</small>
+      <small class="footer-bottom"
+        >&copy; 2025 <strong>Tawanda Kasunzuma</strong>. All rights
+        reserved.</small
+      >
     </footer>
     <script src="./scripts.js" type="module"></script>
   </body>
