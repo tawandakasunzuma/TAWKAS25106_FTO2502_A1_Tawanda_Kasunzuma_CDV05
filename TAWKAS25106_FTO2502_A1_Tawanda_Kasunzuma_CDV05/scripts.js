@@ -1,13 +1,12 @@
 import { techStack } from "./tech-stack.js"
 
-// Typewriter
+/* ====================
+   TYPEWRITER EFFECT
+==================== */
 
 const text = `I'm a passionate front-end developer who enjoys turning ideas into clean, creative websites and web apps. I started with JavaScript and have grown into building responsive interfaces with modern tools. I love learning new things, solving problems, and working with others to bring great ideas to life.`;
-
 const target = document.getElementById('typewriter');
-
 let index = 0;
-
 function typeWriter() {
     if (index < text.length) {
         target.textContent += text.charAt(index);
@@ -15,10 +14,12 @@ function typeWriter() {
         setTimeout(typeWriter, 30);
     }
 }
-
 typeWriter();
 
-// Reveal on scroll
+/* ====================
+   REVEAL ELEMENTS ON SCROLL
+==================== */
+
 const observer = new IntersectionObserver(entries => {
 entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -26,7 +27,6 @@ entries.forEach(entry => {
     }
 });
 }, { threshold: 0.2 });
-
 document.querySelectorAll('.icon-wrap').forEach(el => observer.observe(el));
 
 const projectCards = document.querySelectorAll(".reveal-on-scroll");
@@ -35,31 +35,19 @@ const projectObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("reveal");
-      projectObserver.unobserve(entry.target); // optional: reveal only once
+      projectObserver.unobserve(entry.target);
     }
   });
 }, { threshold: 0.25 });
 
 projectCards.forEach(card => projectObserver.observe(card));
 
-
-// Magnetic hover
-document.querySelectorAll('.icon-wrap').forEach(icon => {
-icon.addEventListener('mousemove', e => {
-    const rect = icon.getBoundingClientRect();
-    const x = e.clientX - rect.left - rect.width / 2;
-    const y = e.clientY - rect.top - rect.height / 2;
-    icon.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px) scale(1.2)`;
-});
-
-icon.addEventListener('mouseleave', () => {
-    icon.style.transform = '';
-});
-});
+/* ====================
+   SHOW TECH NAME ON HOVER
+==================== */
 
 const allWraps = document.querySelectorAll(".icon-wrap");
 const techNameDisplay = document.querySelector(".tech-name-display");
-
 allWraps.forEach(wrap => {
     wrap.addEventListener("mouseover", () => {
         const icon = wrap.querySelector(".icon");
@@ -76,6 +64,10 @@ allWraps.forEach(wrap => {
     });
 })
 
+/* ====================
+   ABOUT SECTION SLIDE-IN
+==================== */
+
 const aboutCards = document.querySelectorAll(
   ".personal-info-container, .fun-facts-container, .tech-journey-container"
 );
@@ -87,7 +79,7 @@ const aboutObserver = new IntersectionObserver(
         aboutCards.forEach((card, index) => {
           setTimeout(() => {
             card.classList.add("slide-in");
-          }, index * 600); // staggered effect
+          }, index * 600);
         });
         aboutObserver.disconnect();
       }
@@ -96,11 +88,11 @@ const aboutObserver = new IntersectionObserver(
   { threshold: 0.3 }
 );
 
-// Watch one of the cards or a wrapper element (like about-container)
 aboutObserver.observe(document.querySelector(".about-container"));
 
-
-// Tech
+/* ====================
+   TECH STACK HOVER INFO
+==================== */
 
 const icons = document.querySelectorAll(".icon");
 const techDescription = document.getElementById("tech-description");
@@ -109,24 +101,27 @@ const techPercentage = document.querySelector(".tech-percentage");
 icons.forEach(icon => {
   icon.addEventListener("mouseover", () => {
     for (let i = 0; i < techStack.length; i++) {
+
       // Update description
       if (techStack[i].name === icon.alt) {
         techDescription.textContent = techStack[i].description;
         document.querySelector(".tech-percentage-description").style.opacity = "1";
-      
-      // Update percentage
-      techPercentage.textContent = `${techStack[i].level}%`;
-      // Update color of percentage
-      if (techStack[i].level === 25) {
-        techPercentage.style.backgroundColor = "rgb(252, 165, 165)";
-      } else if (techStack[i].level === 50) {
-        techPercentage.style.backgroundColor = "rgb(252, 211, 77)";
-      } else if (techStack[i].level === 75) {
-        techPercentage.style.backgroundColor = "rgb(113, 226, 181)";
-      } else {
-        techPercentage.style.backgroundColor = "rgb(74, 222, 128)";
-      }
-      break;
+
+        // Update percentage
+        techPercentage.textContent = `${techStack[i].level}%`;
+
+        // Update color of percentage
+        if (techStack[i].level === 25) {
+          techPercentage.style.backgroundColor = "rgb(252, 165, 165)";
+        } else if (techStack[i].level === 50) {
+          techPercentage.style.backgroundColor = "rgb(252, 211, 77)";
+        } else if (techStack[i].level === 75) {
+          techPercentage.style.backgroundColor = "rgb(110, 231, 183)";
+        } else {
+          techPercentage.style.backgroundColor = "rgb(74, 222, 128)";
+        }
+
+        break;
       }
     }
   })
@@ -134,6 +129,10 @@ icons.forEach(icon => {
     document.querySelector(".tech-percentage-description").style.opacity = "0.75";
   })
 })
+
+/* ====================
+   CONTACT FORM SUBMISSION
+==================== */
 
 const form = document.querySelector('.form');
 form.addEventListener('submit', async e => {
