@@ -15,7 +15,7 @@ Create a clean, responsive portfolio website to showcase my projects, skills, an
 - **Design & UX**
 
   - Clean, professional layout with consistent typography & color palette
-  - Easy navigation via a sticky header and anchor links
+  - Easy navigation via a header with anchor links
   - Responsive design (mobile, tablet, desktop) using Flexbox & CSS Grid
   - Accessibility best practices: semantic HTML, `alt` attributes on images, focus indicators
 
@@ -85,5 +85,5 @@ A modern Kanban task manager built with HTML, CSS, and JavaScript, offering dyna
 ## Contact
 
 - ✉️ tskasunzuma@gmail.com
-- 🔗 https://linkedin.com/in/tawandakasunzuma/
+- 🔗 https://www.linkedin.com/in/tawanda-kasunzuma/
 - 🐙 https://github.com/tawandakasunzuma/
