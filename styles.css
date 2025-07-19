@@ -1346,6 +1346,9 @@ hr {
     .intro-about-me {
         min-height: 140px;
     }
+    .icon-wrap {
+        padding: 1rem 2rem;
+    }
     .icon {
         width: 7vw;
         height: auto;
