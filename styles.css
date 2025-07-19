@@ -1347,10 +1347,10 @@ hr {
         min-height: 140px;
     }
     .icon-wrap {
-        padding: 1.5rem;
+        padding: 1.25rem;
     }
     .icon {
-        width: 5.5vw;
+        width: 5vw;
         height: auto;
         transition: all 600ms ease;
     }
