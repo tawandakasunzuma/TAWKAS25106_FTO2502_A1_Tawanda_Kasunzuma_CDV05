@@ -15,8 +15,6 @@
 body {
     color: rgb(32, 0, 32);
     font-family: 'Lato',sans-serif;
-    overflow-x: hidden;
-    width: 100%;
 }
 
 /* ===============
@@ -382,7 +380,7 @@ main {
 }
 
 .icon {
-  width: 4vw;
+  width: 3.5vw;
   height: auto;
   transition: all 600ms ease;
 }
@@ -1349,7 +1347,9 @@ hr {
         min-height: 140px;
     }
     .icon {
-        width: 6vw;
+        width: 7vw;
+        height: auto;
+        transition: all 600ms ease;
     }
     .tech-name-display {
         font-size: 1.09375rem;
