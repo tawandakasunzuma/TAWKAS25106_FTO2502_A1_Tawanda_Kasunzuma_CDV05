@@ -36,7 +36,7 @@ body {
 }
 
 .nav-item-container {
-    list-style: none;
+    list-style1 none;
     display: flex;
     gap: 4rem;
 }
@@ -992,7 +992,7 @@ hr {
     }
 
     .nav-item-container {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     /* ===============
@@ -1337,7 +1337,7 @@ hr {
         gap: 0.5rem;
     }
     .nav-item-container {
-        gap: 2rem;
+        gap: 1rem;
     }
     .nav-item a {
         font-size: 3.5vw;
