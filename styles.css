@@ -1334,7 +1334,7 @@ hr {
 
 @media (min-width: 320px) and (max-width: 420px) {
     .navbar {
-        gap: 1.5rem;
+        gap: 1rem;
     }
     .nav-item-container {
         gap: 2rem;
@@ -1357,7 +1357,7 @@ hr {
     @keyframes slideInRight {
     from {
         opacity: 0;
-        transform: translateX(5px);
+        transform: translateX(0);
     }
     to {
         opacity: 1;
