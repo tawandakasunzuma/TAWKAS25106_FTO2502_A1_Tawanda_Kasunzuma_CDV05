@@ -15,6 +15,8 @@
 body {
     color: rgb(32, 0, 32);
     font-family: 'Lato',sans-serif;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* ===============
@@ -1334,7 +1336,7 @@ hr {
 
 @media (min-width: 320px) and (max-width: 420px) {
     .navbar {
-        gap: 1rem;
+        gap: 0.5rem;
     }
     .nav-item-container {
         gap: 2rem;
@@ -1352,16 +1354,5 @@ hr {
     .tech-name-display {
         font-size: 1.09375rem;
         max-width: 55vw;
-    }
-    /* Slide-in animation */
-    @keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(0);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
     }
 }
