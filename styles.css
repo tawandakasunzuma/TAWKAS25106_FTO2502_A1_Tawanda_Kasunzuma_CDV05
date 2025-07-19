@@ -992,7 +992,7 @@ hr {
     }
 
     .nav-item-container {
-        gap: 1rem;
+        gap: 2rem;
     }
 
     /* ===============
@@ -1337,7 +1337,8 @@ hr {
         gap: 0.5rem;
     }
     .nav-item-container {
-        gap: 1rem;
+        gap: 2rem;
+        list-style: none;
     }
     .nav-item a {
         font-size: 3.5vw;
