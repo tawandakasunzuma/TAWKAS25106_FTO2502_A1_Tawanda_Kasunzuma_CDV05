@@ -1,6 +1,12 @@
-# Tawanda’s Developer Portfolio
+# 👨‍💻 Tawanda’s Developer Portfolio
 
-**Live site:** https://tawanda-personal-website.netlify.app/
+> A clean, responsive portfolio website showcasing projects, skills, and contact information with a focus on design and user experience.
+
+🌐 [Live Site on Netlify](https://tawanda-personal-website.netlify.app/)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
+[![GitHub Stars](https://img.shields.io/github/stars/tawandakasunzuma/tawanda-kasunzuma-portfolio?style=social)](https://github.com/tawandakasunzuma/tawanda-kasunzuma-portfolio/stargazers)  
+[![GitHub Issues](https://img.shields.io/github/issues/tawandakasunzuma/tawanda-kasunzuma-portfolio)](https://github.com/tawandakasunzuma/tawanda-kasunzuma-portfolio/issues)
 
 ---
 
