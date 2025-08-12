@@ -50,8 +50,8 @@ Create a clean, responsive portfolio website to showcase my projects, skills, an
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/tawandakasunzuma/TAWKAS25106_FTO2502_A1_Tawanda_Kasunzuma_CDV05.git
-   cd TAWKAS25106_FTO2502_A1_Tawanda_Kasunzuma_CDV05
+   git clone https://github.com/tawandakasunzuma/tawanda-kasunzuma-portfolio.git
+   cd tawanda-kasunzuma-portfolio
    ```
 2. Open `index.html` in your browser (or use Live Server).
 
