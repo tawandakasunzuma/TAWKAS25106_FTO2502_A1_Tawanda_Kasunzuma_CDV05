@@ -103,11 +103,11 @@ Contributions are welcome! To get started:
 
 3. **Commit your changes:**
 
-   ```git commit -m "Add your feature"****
+   ```git commit -m "Add your feature"```
 
 4. **Push to your branch:**
 
-   ```git push origin feature/your-feature****
+   ```git push origin feature/your-feature```
 
 5. **Open a Pull Request** on GitHub
 
