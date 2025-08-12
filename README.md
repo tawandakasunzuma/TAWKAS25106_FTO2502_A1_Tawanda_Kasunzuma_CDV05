@@ -66,32 +66,58 @@ Built to demonstrate design quality and technical proficiency.
 3. (Optional) **View source & comments**
    All HTML, CSS, and JS files include inline comments explaining structure and logic.
 
-## 📂 Projects
+---
 
-### 🎬 Searcha Gif
+## 💡 Usage Guide
 
-A sleek and responsive GIF search app with click-to-load more results, dark mode, and one-click downloads for easy sharing.
-
-- **Tech Stack:** React, Tailwind CSS, Giphy API
-- **Live Demo:** [searchagif.netlify.app](https://searchagif.netlify.app)
-- **Source Code:** [GitHub Repo](https://github.com/tawandakasunzuma/giphy-search-app)
-- **Screenshot:**  
-  <img src="./images/searcha-gif-image.png" alt="Searcha Gif Screenshot" width="400"/>
+- Use the header navigation links or anchor links to browse sections.  
+- Explore showcased projects, skills, and contact information.  
+- The site is fully responsive and optimized for all devices.  
+- Access live demos and GitHub repositories linked within project descriptions.
 
 ---
 
-### 📌 Kanban Task Management App
+## 📖 Code Structure & Quality
 
-A modern Kanban task manager built with HTML, CSS, and JavaScript, offering dynamic task handling, responsiveness, and theme toggling.
+A static website built with semantic HTML, CSS, and vanilla JavaScript:
 
-- **Tech Stack:** HTML5, CSS3, JavaScript, LocalStorage
-- **Live Demo:** [tawanda-kanban-task-manager.netlify.app](https://tawanda-kanban-task-manager.netlify.app/)
-- **Source Code:** [GitHub Repo](https://github.com/tawandakasunzuma/TAWKAS25106_FTO2502_GroupA_Tawanda-Kasunzuma_JSLPP)
-- **Screenshot:**  
-  <img src="./images/kanban-app-image.png" alt="Kanban App Screenshot" width="400"/>
+- `index.html` — Main entry point with well-structured sections.  
+- `css/` — Contains stylesheets using BEM methodology and CSS Grid/Flexbox for layout.  
+- `js/` — JavaScript files managing interactive elements and navigation enhancements.  
 
-## Contact
+Accessibility best practices are followed for semantic markup and keyboard navigation.  
+The codebase is clean, commented, and optimized for performance and responsiveness.  
+Consistent naming conventions and folder organization facilitate easy updates.
 
-- ✉️ tskasunzuma@gmail.com
-- 🔗 https://www.linkedin.com/in/tawanda-kasunzuma/
-- 🐙 https://github.com/tawandakasunzuma/
+---
+
+## 🧩 Contributing
+
+Contributions are welcome! To get started:
+
+1. **Fork** the repository
+
+2. **Create a new branch:**
+
+   ```git checkout -b feature/your-feature```
+
+3. **Commit your changes:**
+
+   ```git commit -m "Add your feature"****
+
+4. **Push to your branch:**
+
+   ```git push origin feature/your-feature****
+
+5. **Open a Pull Request** on GitHub
+
+---
+
+## 📬 Contact
+
+For questions, feedback, or collaboration, please reach out to:
+
+**Tawanda Kasunzuma**  
+📧 tskasunzuma@gmail.com  
+🔗 https://github.com/tawandakasunzuma  
+🔗 https://www.linkedin.com/in/tawanda-kasunzuma/
