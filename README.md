@@ -1,4 +1,4 @@
-# 👨‍💻 Tawanda’s Developer Portfolio
+# Tawanda’s Developer Portfolio
 
 > A clean, responsive portfolio website showcasing projects, skills, and contact information with a focus on design and user experience.
 
@@ -10,36 +10,38 @@
 
 ---
 
-## 🎯 Objective
+## 📝 Overview
 
-Create a clean, responsive portfolio website to showcase my projects, skills, and contact information. Built for CDV05, it demonstrates design & user experience, project showcase, content quality, and technical proficiency.
+This portfolio site showcases:
+
+- 🎯 Projects, skills, and contact info in a clean, professional design
+- 📱 Responsive layout optimized for desktop, tablet, and mobile
+- 🧑‍💻 Clear navigation with a header and anchor links
+- 📄 Well-structured content with accessibility best practices
+- 🔗 Links to live demos and GitHub repos for featured projects
+
+Built to demonstrate design quality and technical proficiency.
 
 ---
 
-## 🔑 Key Features
+## 🧰 Tech Stack
 
-- **Design & UX**
+- **HTML5**
+- **CSS3** (Flexbox, Grid, BEM)
+- **JavaScript** (ES6 Modules)
+- **Git & GitHub** (version control)
+- **Netlify** (deployment)
 
-  - Clean, professional layout with consistent typography & color palette
-  - Easy navigation via a header with anchor links
-  - Responsive design (mobile, tablet, desktop) using Flexbox & CSS Grid
-  - Accessibility best practices: semantic HTML, `alt` attributes on images, focus indicators
+---
 
-- **Project Showcase**
+## 🚀 Key Features
 
-  - Two featured projects with descriptions, tech stacks, screenshots, and links
-  - Live demos and GitHub repos provided for each project
-
-- **Content Quality**
-
-  - Clear, concise copy with no typos
-  - Professional, consistent tone throughout
-
-- **Technical Proficiency**
-  - Built with HTML5, CSS3, and vanilla JavaScript (ES6 modules)
-  - Clean, well‑organized, and commented code
-  - Basic SEO: `<meta>` tags for title, description, viewport, and descriptive URLs
-  - Hosted on Netlify for continuous deployment
+- 🎯 Showcase projects, skills, and contact info with a clean, professional layout  
+- 📱 Responsive design optimized for desktop, tablet, and mobile  
+- 🔗 Easy navigation via header links and anchor scrolling  
+- ♿ Accessibility best practices including semantic HTML and focus indicators  
+- 🔍 Live demos and GitHub repositories for featured projects  
+- 💻 Built with clean, well-commented HTML, CSS, and JavaScript
 
 ---
 
