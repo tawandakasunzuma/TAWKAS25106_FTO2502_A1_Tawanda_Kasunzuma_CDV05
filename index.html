@@ -48,9 +48,37 @@
           <li class="nav-item"><a href="#projects">Projects</a></li>
           <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
+        <!-- Hamburger button -->
+        <div
+          class="hamburger-container"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <p class="hamburger-icon-open" aria-hidden="true">&#9776;</p>
+        </div>
       </nav>
     </header>
     <main>
+      <!-- Hamburger menu -->
+      <div
+        class="hamburger-menu"
+        aria-hidden="true"
+        role="dialog"
+        aria-label="Mobile navigation"
+      >
+        <button class="hamburger-menu-close" aria-label="Close menu">
+          &times;
+        </button>
+
+        <ul class="nav-item-container-menu">
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#tech-stack">Tech Stack</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
       <section class="hero-section">
         <div class="left-side">
           <p class="job-title">Software Developer</p>

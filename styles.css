@@ -8,6 +8,11 @@
     margin: 0;
 }
 
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* ===============
     Body
 =============== */
@@ -41,6 +46,22 @@ body {
     gap: 4rem;
 }
 
+.nav-item-container-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
 .nav-item a {
     display: inline-block;
     text-decoration: none;
@@ -52,13 +73,123 @@ body {
 
 .nav-item a:hover,
 .nav-item a:focus {
-    color: rgb(160, 0, 160);
+    color: rgb(64, 0, 64);
 }
 
 .nav-item a:active {
-    border-color: rgba(128, 0, 128, 0.25);
-    color: rgba(128, 0, 128, 0.5);
+    color: rgb(128, 0, 128);
 }
+
+.hamburger-container {
+    border: 1px solid rgb(64, 0, 64);
+    background-color: rgb(64, 0, 64);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.125rem;
+    display: none;
+}
+
+.hamburger-icon-open,
+.hamburger-icon-close {
+    color: white;
+}
+
+.hamburger-icon-open:active {
+    opacity: 0.75;
+    transform: scale(0.75);
+}
+
+/* Fullscreen Hamburger Overlay */
+
+.hamburger-menu {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,255,255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1300;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 300ms ease, transform 300ms ease, visibility 150ms;
+  overflow: hidden;
+}
+
+/* when menu is open */
+.hamburger-menu.open {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+}
+
+/* center the link list vertically, large touch targets */
+.nav-item-container-menu {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.975);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* style anchor inside overlay (large and tappable) */
+.nav-item-container-menu .nav-item a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(32,0,32);
+  padding: 0.75rem 1.25rem;
+  display: inline-block;
+  border-radius: 5rem;
+}
+
+.nav-item-container-menu .nav-item a:hover,
+.nav-item-container-menu .nav-item a:focus {
+  color: rgb(64,0,64);
+}
+
+.nav-item-container-menu .nav-item a:active {
+    opacity: 0.5;
+    background-color: rgba(128,0,128, 0.05);
+}
+
+/* big close button on overlay (top-right) */
+.hamburger-menu-close {
+  position: absolute;
+  z-index: 1500;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  color: rgb(32,0,32);
+}
+
+.hamburger-icon-close:active {
+    opacity: 0.75;
+    transform: scale(0.75);
+}
+
+.hamburger-icon-close {
+    display: none;
+}
+
+/* Desktop: keep overlay hidden and hamburger not displayed */
+@media (min-width: 769px) {
+  .hamburger-container { display: none; }
+  .hamburger-menu { display: none; }
+}
+
 
 /* ===============
     Hero Section
@@ -984,21 +1115,21 @@ hr {
     .navbar {
         padding: 0.375rem 5vw;
     }
-    .nav-item a {
-        font-size: 0.875rem;
-    }
     .logo {
         width: 45px;
     }
-
     .nav-item-container {
-        gap: 2rem;
+        display: none;
     }
-
+    .hamburger-container {
+        display: flex;
+    }
     /* ===============
         Hero Section
     =============== */
-
+    body {
+        overflow-x: hidden;
+    }
     .hero-section {
         display: grid;
         grid-template-columns: 1fr;
@@ -1351,7 +1482,7 @@ hr {
         padding: 0.75rem;
     }
     .icon {
-        width: 5vw;
+        width: 6vw;
         height: auto;
         transition: all 600ms ease;
     }
